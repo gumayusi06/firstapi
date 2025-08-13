@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>랜덤 고양이 뽑기</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <style>
+      body { font-family: system-ui, -apple-system, sans-serif; padding: 24px; }
+      h1 { margin: 0 0 16px; }
+      button { padding: 10px 14px; border-radius: 10px; border: 1px solid #ddd; cursor: pointer; }
+      button:disabled { opacity: 0.6; cursor: not-allowed; }
+      #wrap { max-width: 720px; }
+      #status { margin: 12px 0; }
+      #viewer { margin-top: 16px; }
+      #viewer img { max-width: 100%; border-radius: 12px; display: block; }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>랜덤 고양이 뽑기 🐱</h1>
+      <button id="btn">새 고양이 보기</button>
+      <div id="status">버튼을 눌러 고양이를 불러와요!</div>
+      <div id="viewer">
+        <img id="catImg" alt="Random cat will appear here" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
